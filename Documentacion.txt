@@ -17,11 +17,11 @@ estadoServicio
 
 
 
-• rolUniversitario o SP: Función: fn_getNombreRol(@id INT) 
+🆗• rolUniversitario o SP: Función: fn_getNombreRol(@id INT) 
 
 
 
-• descuentoRolUniversitario o SP: Función: fn_getDescuentoVigente(@idRol INT, @fecha DATE) 
+🆗• descuentoRolUniversitario o SP: Función: fn_getDescuentoVigente(@idRol INT, @fecha DATE) 
 
 • tipoDocumento o SP: sp_insertTipoDocumento, sp_updateTipoDocumento, sp_deleteTipoDocumento 
 
