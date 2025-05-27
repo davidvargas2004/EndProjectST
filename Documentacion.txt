@@ -1,0 +1,49 @@
+rolUniversitario
+descuentoRolUniversitario
+tipoDocumento
+cliente
+restaurante
+disponibilidadRestaurante
+opcionPago
+metodoPagoRestaurante
+categoriaProducto
+producto
+disponibilidadProducto
+precioProducto
+estadoServicio 
+
+
+###SP, Triggers y Funciones por tabla:### 
+
+
+
+• rolUniversitario o SP: Función: fn_getNombreRol(@id INT) 
+
+
+
+• descuentoRolUniversitario o SP: Función: fn_getDescuentoVigente(@idRol INT, @fecha DATE) 
+
+• tipoDocumento o SP: sp_insertTipoDocumento, sp_updateTipoDocumento, sp_deleteTipoDocumento 
+
+• cliente o SP: sp_insertCliente, sp_updateCliente, sp_deleteCliente o Función: fn_getClientePorDocumento(@nui VARCHAR) 
+
+• restaurante o SP: sp_insertRestaurante, sp_updateRestaurante o Función: fn_getRestaurante(@id INT) 
+
+
+
+
+• disponibilidadRestaurante o SP: sp_insertDisponibilidadRestaurante, sp_updateDisponibilidadRestaurante
+
+
+ • opcionPago o SP: sp_insertOpcionPago, sp_updateOpcionPago, sp_deleteOpcionPago 
+
+
+ • metodoPagoRestaurante o SP: sp_insertMetodoPagoRestaurante, sp_updateMetodoPagoRestaurante o Función: fn_getMetodosPagoRestaurante(@idRestaurante INT) • categoriaProducto o SP: sp_insertCategoriaProducto, sp_updateCategoriaProducto o Trigger: Validar que horaInicio < horaFin
+
+ • producto o SP: sp_insertProducto, sp_updateProducto o Función: fn_getProductosRestaurante(@idRestaurante INT) 
+
+ • disponibilidadProducto o SP: sp_insertDisponibilidadProducto, sp_updateDisponibilidadProducto 
+
+ • precioProducto o SP: sp_insertPrecioProducto o Trigger: Establecer automáticamente estado = 0 para precios antiguos del mismo producto o Función: fn_getPrecioActual(@idProducto INT)
+  
+ • estadoServicio o SP: sp_insertEstadoServicio, sp_updateEstadoServicio
